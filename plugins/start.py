@@ -18,7 +18,7 @@ async def subscribe(app, message):
               return 1
         except UserNotParticipant:
             caption = f"Join our channel to use the bot"
-            await message.reply_photo(photo="https://graph.org/file/d44f024a08ded19452152.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"https://t.me/quiz_zone_new")]]))
+            await message.reply_photo(photo="https://vault.pictures/p/7e5ce991c10e46af9c94682f1571e1d8",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"https://t.me/PvFilmsX")]]))
             return 1
         except Exception:
             await message.reply_text("Something Went Wrong. Contact admins...")
@@ -169,7 +169,7 @@ async def terms(client, message):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="http://t.me/SaveRestrictionContactBot")],
         ]
     )
     await message.reply_text(terms_text, reply_markup=buttons)
@@ -188,7 +188,7 @@ async def plan(client, message):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="http://t.me/SaveRestrictionContactBot")],
         ]
     )
     await message.reply_text(plan_text, reply_markup=buttons)
@@ -207,7 +207,7 @@ async def see_plan(client, callback_query):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="http://t.me/SaveRestrictionContactBot")],
         ]
     )
     await callback_query.message.edit_text(plan_text, reply_markup=buttons)
@@ -225,7 +225,7 @@ async def see_terms(client, callback_query):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="http://t.me/SaveRestrictionContactBot")],
         ]
     )
     await callback_query.message.edit_text(terms_text, reply_markup=buttons)
