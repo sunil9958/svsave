@@ -137,7 +137,7 @@ async def K(c, t, C, h, m, start_time):
 📊 **__Done__**: {p:.2f}%
 🚀 **__Speed__**: {speed:.2f} MB/s
 ⏳ **__ETA__**: {eta}\n
-**__Powered by Team SPY__**"""
+**__Powered by Team PvFilmsX__**"""
             )
         if p >= 100:
             P.pop(m, None)
