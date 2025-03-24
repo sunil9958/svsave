@@ -14,7 +14,7 @@ async def subscribe(app, message):
           user = await app.get_chat_member(FORCE_SUB, message.from_user.id)
           print(user)
           if str(user.status) == "ChatMemberStatus.BANNED":
-              await message.reply_text("You are Banned. Contact -- Team SPY")
+              await message.reply_text("You are Banned. Contact -- @Sunil_v")
               return 1
         except UserNotParticipant:
             caption = f"Join our channel to use the bot"
