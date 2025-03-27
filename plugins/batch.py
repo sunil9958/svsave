@@ -350,7 +350,7 @@ async def batch_cmd(C, m: M):
     
     if not await is_premium_user(U):
         await m.reply_text(
-            'You need premium for this operation send /pay to proceed for payment'
+            'You need premium for this operation send /plan to proceed for payment'
             )
         return
     if U in W:
@@ -368,7 +368,7 @@ async def single_cmd(C, m: M):
         return
     if not await is_premium_user(U):
         await m.reply_text(
-            'You need premium for this operation send /pay to proceed for payment'
+            'You need premium for this operation send /plan to proceed for payment'
             )
         return
     if U in W:
